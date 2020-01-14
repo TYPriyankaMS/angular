@@ -1,0 +1,18 @@
+<h1 class='col-md-5 offset-md-4'>My Google Maps Location</h1>
+<div id="map"></div>
+<script>
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+                lat: -34.397,
+                lng: 150.644
+            },
+            zoom: 8
+        });
+        console.log(map);
+        console.log(10);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn-KUeOczQQMwzPPVXIRghy93HAXytSWE&callback=initMap" async defer></script>
